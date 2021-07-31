@@ -92,7 +92,7 @@ main{
 
 /* -------- BG IMAGE -------- */
 .stats{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,1)),url(/resources/img/coronavirus-banner.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,1)),url(coronavirus-banner.jpg);
     width: 100%;
     /* height: 600px; */
     background-size: cover;
