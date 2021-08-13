@@ -38,7 +38,7 @@ fetch("https://api.ipgeolocation.io/ipgeo?apiKey=14c7928d2aef416287e034ee91cd360
 /*                     FETCH API                  */
 /* ---------------------------------------------- */
 function fetchData(country) {
-	user_country = country;
+// 	user_country = country;
 	country_name_element.innerHTML = "Loading...";
 
 	(cases_list = []),
