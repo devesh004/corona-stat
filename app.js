@@ -9,6 +9,7 @@ const deaths_element = document.querySelector(".deaths .value");
 const new_deaths_element = document.querySelector(".deaths .new-value");
 
 const ctx = document.getElementById("axes_line_chart").getContext("2d");
+const ctx2 = document.getElementById("axes_line_chart2").getContext("2d");
 
 // variables
 let app_data = [],
@@ -146,7 +147,8 @@ function axesLinearChart() {
 					borderColor: "#FFF",
 					backgroundColor: "#FFF",
 					borderWidth: 0.4,
-				},
+				}
+				,
 				{
 					label: "Recovered",
 					data: recovered_list,
@@ -154,7 +156,19 @@ function axesLinearChart() {
 					borderColor: "	#00FF00",
 					backgroundColor: "	#00FF00",
 					borderWidth: 0.4,
-				},
+				}
+			],
+			labels: formatedDates,
+		},
+		options: {
+			responsive: true,
+			maintainAspectRatio: false,
+		},
+	});
+	my_chart = new Chart(ctx2, {
+		type: "line",
+		data: {
+			datasets: [
 				{
 					label: "Deaths",
 					data: deaths_list,
@@ -162,7 +176,7 @@ function axesLinearChart() {
 					borderColor: "#f44336",
 					backgroundColor: "#f44336",
 					borderWidth: 0.4,
-				},
+				}
 			],
 			labels: formatedDates,
 		},
