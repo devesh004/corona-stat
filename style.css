@@ -255,7 +255,7 @@ footer{
         align-items: flex-start;
     }
 }
-@media screen and(max-width:840) {
+@media screen and (max-width: 840px) {
     .row{
         flex-direction: column;
     }
