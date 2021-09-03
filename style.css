@@ -148,6 +148,10 @@ main{
     margin: 0 auto;
     padding: 50px 0;
 }
+.row{
+    display: flex;
+    flex-direction: row;
+}
 /* -------- SEARCH COUNTRY -------- */
 .search-country{
     position: relative;
@@ -249,5 +253,10 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+}
+@media screen and(max-width:840) {
+    .row{
+        flex-direction: column;
     }
 }
